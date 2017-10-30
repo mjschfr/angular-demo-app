@@ -20,10 +20,7 @@ export class AddUserComponent implements OnInit {
 
     onSubmit(){
 
-        const id = this.db.createId();
-debugger;
   	    var newUser = {
-           
   		    firstName: this.model.firstName,
   		    lastName: this.model.lastName
   	    };
