@@ -1,0 +1,20 @@
+<app-add-user></app-add-user>
+
+
+<mat-card class="user-summary-card">
+	<mat-card-header>
+		<mat-card-title>Current Users</mat-card-title>
+	</mat-card-header>
+	<mat-list>
+	 <mat-list-item *ngFor="let user of users | async">
+			<img matListAvatar src="https://thumbs.dreamstime.com/z/user-icon-flat-member-service-46707697.jpg" class="avatar-image" />
+			{{user.firstName}} {{user.lastName}} {{user.id}}
+			<mat-icon matListIcon class="list-icon-edit" (click)="editUser(user)">edit</mat-icon>
+			<mat-icon matListIcon class="list-icon-delete" (click)="deleteUser(user)">delete</mat-icon>
+		</mat-list-item>
+	</mat-list>
+</mat-card>
+
+
+
+

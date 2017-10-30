@@ -1,0 +1,19 @@
+.avatar-image{
+	padding-right: 10px;
+}
+
+.list-icon-edit{
+	position: absolute;
+	right: 50px;
+	
+}
+.list-icon-delete{
+	position: absolute;
+	right: 15px;
+	
+}
+
+.user-summary-card{
+	margin: 20px;
+	max-width: 450px;
+}

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+	title = 'app';
+  	get mode() { return ['side', 'over', 'push'][2]; }
 }
